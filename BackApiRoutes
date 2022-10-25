@@ -1,0 +1,76 @@
+1. Login
+    Request
+    {
+       username: string
+       password: string     
+    }
+
+    Response
+    {
+        userId: string
+        username: string
+        token: string
+    }
+
+2. Register
+    Request
+    {
+        username: string
+        email: string
+        password: string
+        phone number: number
+    }
+    Response
+    {
+        statusCode: number
+        statusMessage: string
+    }
+
+3. Logout
+    Request 
+    {
+        token: string
+        userId: string
+    }
+
+    Response
+    {
+        statusCode: number
+        statusMesasge: string
+    }
+
+
+4. Day
+{
+    Id
+    userId
+    List<Task>
+    Date: 
+}
+
+5. Task
+
+{
+    Id
+    issuedDate
+    startDate
+    userId
+    status
+    IsRepeatable
+    name
+    description
+    byWeek
+    weekDays list<number>
+    isCustom
+    customDays list<number>
+    endDate
+}
+
+
+6. Repeatable Task
+{
+    id
+    taskId
+    userId
+}
+
